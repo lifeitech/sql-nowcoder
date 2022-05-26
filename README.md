@@ -1,8 +1,8 @@
 # 牛客网SQL刷题笔记 | Solutions for SQL problems on nowcoder.com
 
-牛客网SQL刷题笔记。每个markdown文件包括题目、答案以及思路。
+牛客网SQL刷题笔记。每个markdown文件都是self-contained，包括题目、答案（代码），以及思路。我用的语言为 PostgreSQL，其他数据库语言的答案可能略有不同。
 
-我用的语言为 PostgreSQL。
+This repository hosts my solutions for some SQL problems on [nowcoder.com](https://www.nowcoder.com/), in Chinese. Every markdown file is self-contained, including problem description, code, and my solution idea. I use PostgreSQL. Solutions in other database languages might differ slightly.
 
 [SQL22 统计每个学校的答过题的用户的平均答题数](/SQL22-统计每个学校的答过题的用户的平均答题数.md)
 
@@ -19,5 +19,3 @@
 [SQL34 统计复旦用户8月练题情况](/SQL34-统计复旦用户8月练题情况.md)
 
 [SQL35 浙大不同难度题目的正确率](/SQL35-浙大不同难度题目的正确率.md)
-
-
