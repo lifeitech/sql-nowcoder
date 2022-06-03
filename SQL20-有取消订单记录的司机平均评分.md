@@ -114,7 +114,7 @@ mysql> select year, sum(profit) as profit
 +------+--------+
 ```
 
-对`rollup`的解请参见官方文档
+对`rollup`的详解请参见官方文档：
 
 [MySQL :: MySQL 5.6 Reference Manual :: 12.19.2 GROUP BY Modifiers](https://dev.mysql.com/doc/refman/5.6/en/group-by-modifiers.html)
 
