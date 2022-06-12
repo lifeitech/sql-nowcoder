@@ -74,13 +74,13 @@ select city, driver_id, avg_grade, avg_order_num, avg_mileage
 from (
 select city, driver_id, round(avg_grade, 1) as avg_grade,
 round(num_orders / num_days, 1) as avg_order_num,
-round(toal_mileage / num_days, 3) as avg_mileage,
+round(total_mileage / num_days, 3) as avg_mileage,
 rank() over(partition by city order by avg_grade desc) as rk
 from ( 
 ## joined table
 select driver_id, city, avg(grade) as avg_grade,
 count(order_id) as num_orders,
-sum(mileage) as toal_mileage,
+sum(mileage) as total_mileage,
 count(distinct date(order_time)) as num_days
 from tb_get_car_record join tb_get_car_order using(order_id)
 group by city, driver_id) as x 
@@ -101,7 +101,7 @@ order by avg_order_num
 ```sql
 (select driver_id, city, avg(grade) as avg_grade,
 count(order_id) as num_orders,
-sum(mileage) as toal_mileage,
+sum(mileage) as total_mileage,
 count(distinct date(order_time)) as num_days
 from tb_get_car_record join tb_get_car_order using(order_id)
 group by city, driver_id
@@ -113,7 +113,7 @@ group by city, driver_id
 ```sql
 (select city, driver_id, round(avg_grade, 1) as avg_grade,
 round(num_orders / num_days, 1) as avg_order_num,
-round(toal_mileage / num_days, 3) as avg_mileage,
+round(total_mileage / num_days, 3) as avg_mileage,
 rank() over(partition by city order by avg_grade desc) as rk
 from x
 ) as y
@@ -127,7 +127,3 @@ from y
 where rk = 1
 order by avg_order_num
 ```
-
-
-
-
