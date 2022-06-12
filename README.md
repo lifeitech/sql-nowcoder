@@ -24,6 +24,7 @@ This repository hosts my solutions for some SQL problems on [nowcoder.com](https
 ## 出行场景（某滴打车）
 
 - [SQL20 有取消订单记录的司机平均评分](/SQL20-有取消订单记录的司机平均评分.md)
+- [SQL21 每个城市中评分最高的司机信息](/SQL21-每个城市中评分最高的司机信息.md)
 
 ## 内容行业（某乎问答）
 
