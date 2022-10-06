@@ -1,8 +1,8 @@
-# 牛客网SQL刷题笔记（持续更新中） | Solutions for SQL problems on nowcoder.com (constantly updated)
+# 牛客网SQL刷题笔记 | Solutions for SQL problems on nowcoder.com
 
 牛客网SQL刷题笔记。每个markdown文件都是self-contained，包括题目、答案（代码），以及思路。
 
-This repository hosts my solutions for some SQL problems on [nowcoder.com](https://www.nowcoder.com/), in Chinese. Every markdown file is self-contained, including problem description, code, and my solution idea.
+This repository hosts my solutions for some SQL problems on [nowcoder.com](https://www.nowcoder.com/), in Chinese. Every markdown file is self-contained, including problem description, code, as well as explanations.
 
 ## 刷题网站
 
